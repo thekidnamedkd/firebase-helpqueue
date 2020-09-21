@@ -20,13 +20,13 @@ const rrfProps = {
     },
   dispatch: store.dispatch,
   createFirestoreInstance
-}
+};
 
 ReactDOM.render(
   <Provider store={store}>
   <ReactReduxFirebaseProvider {...rrfProps}>
     <App />
-    </ReactReduxFirebaseProvider>
+    </ReactReduxFirebaseProvider>;
   </Provider>,
   document.getElementById('root')
 );
